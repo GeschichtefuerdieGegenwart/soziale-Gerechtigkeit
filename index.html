@@ -173,6 +173,15 @@
 
   footer { text-align: center; padding: 20px; color: #999; font-size: 0.8em; }
 </style>
+<style id="moodle-anpassung">
+/* Überarbeitung Oktober 2026: Barrierearmut und Moodle */
+:focus-visible{outline:3px solid #1d4ed8 !important;outline-offset:2px !important}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+.mdl-hinweis{max-width:900px;margin:12px auto;padding:12px 16px;border-left:4px solid #1d4ed8;background:#eef3fb;color:#1f2a37;border-radius:6px;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;text-align:left}
+.mdl-hinweis b{font-weight:700}
+.mdl-bildquellen{max-width:900px;margin:24px auto;padding:8px 16px;font:13px/1.5 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#444;text-align:left}
+.mdl-bildquellen a{color:#1d4ed8;word-break:break-all}
+</style>
 </head>
 <body>
 
@@ -231,6 +240,19 @@
     <p>Diese Linie zeigt, wie viel Prozent des <b>gesamten</b> Einkommens im Schnitt an Steuer abgeht &ndash; nicht nur auf den letzten verdienten Euro (Durchschnittssteuersatz statt Grenzsteuersatz).</p>
     <div class="chart-svg-wrap" id="avgTaxChart"></div>
     <p class="source">Quelle: Eigene Berechnung nach BMF-Einkommensteuertarif 2026 (vereinfachtes Modell ohne Sonderausgaben/Freibeträge außer Grundfreibetrag).</p>
+  </div>
+
+  <div class="card">
+    <h3>Wie hat sich das Vermögen der Reichen zuletzt entwickelt?</h3>
+    <p>Diese Zahlen zeigen, warum das Thema Umverteilung gerade jetzt viel diskutiert wird: Das Vermögen der Reichsten ist in den letzten Jahren besonders schnell gewachsen.</p>
+    <div class="grid3" style="margin-bottom:10px;">
+      <div class="stat-box"><div class="num">+30%</div><div class="lbl">Vermögenszuwachs deutscher Milliardäre 2025 (inflationsbereinigt)</div></div>
+      <div class="stat-box"><div class="num">172</div><div class="lbl">Milliardäre in Deutschland 2025 &ndash; ein Drittel mehr als im Vorjahr</div></div>
+      <div class="stat-box"><div class="num">71%</div><div class="lbl">Anteil des Milliardärsvermögens, der aus Erbschaft stammt (nicht selbst erarbeitet)</div></div>
+    </div>
+    <p>Rund 5.000 Superreiche (mehr als 100 Mio. Dollar Vermögen) besitzen zusammen über ein Viertel des gesamten Finanzvermögens in Deutschland. Der Hauptgrund für das schnelle Wachstum: hohe Gewinne an den Aktienmärkten, zum Beispiel stieg der DAX innerhalb eines Jahres um rund 27%. Damit wächst das Vermögen der Reichsten seit 2020 deutlich schneller als das Bruttoinlandsprodukt und schneller als die Löhne der meisten Beschäftigten.</p>
+    <div class="info-box">Diese Entwicklung ist ein zentrales Argument in der aktuellen Debatte: Befürworter einer Vermögensteuer sehen darin einen Beleg dafür, dass sich Reichtum von selbst vermehrt, während Kritiker einwenden, dass Börsengewinne auch wieder schwinden können und deshalb keine verlässliche Steuerbasis seien.</div>
+    <p class="source">Quelle: Boston Consulting Group, Global Wealth Report 2026 (zitiert nach tagesschau.de, n-tv, Mai 2026); Oxfam Ungleichheitsbericht 2026; Manager Magazin Milliardärsranking, Oktober 2025.</p>
   </div>
 
   <div class="card">
@@ -342,11 +364,13 @@
         <li>Wer mehr verdient, zahlt einen größeren Anteil &ndash; das gilt als fair</li>
         <li>Finanziert Schulen, Straßen und soziale Hilfen</li>
         <li>Hilft in Krisenzeiten, weil Ärmere weniger Steuern zahlen</li>
+        <li>Reiche Haushalte in Deutschland sind 2025 deutlich reicher geworden (Vermögen der Milliardäre stieg um rund 30%) &ndash; ein höherer Spitzensteuersatz könnte diesen Zuwachs stärker an der Gesellschaft beteiligen</li>
       </ul></div>
       <div class="con"><h4>Dagegen spricht</h4><ul>
         <li>Hohe Steuersätze können die Lust an mehr Arbeit senken</li>
         <li>Nur Arbeitseinkommen wird stark besteuert &ndash; Kapital und Vermögen weniger</li>
         <li>Die Mittelschicht fühlt sich oft besonders belastet</li>
+        <li>Ein Großteil des Vermögenswachstums der Reichen stammt aus Börsengewinnen (z. B. DAX-Anstieg von 27% in einem Jahr), nicht aus Arbeitseinkommen &ndash; die Einkommensteuer trifft also nicht die eigentliche Ursache</li>
       </ul></div>
     </div>
     <div class="statement" data-key="est1">
@@ -366,11 +390,14 @@
         <li>Große Vermögen wachsen oft von selbst, z. B. durch Zinsen oder steigende Hauspreise</li>
         <li>Könnte die große Lücke zwischen reich und arm verkleinern</li>
         <li>Würde zusätzliches Geld für Bildung oder Infrastruktur bringen</li>
+        <li>Rund 5.000 Superreiche besitzen inzwischen mehr als ein Viertel des gesamten Finanzvermögens in Deutschland (27,3%) &ndash; diese Konzentration wächst seit Jahren weiter</li>
+        <li>Das Vermögen der deutschen Milliardäre stieg 2025 inflationsbereinigt um etwa 30%, während die Löhne der meisten Beschäftigten deutlich langsamer wuchsen</li>
       </ul></div>
       <div class="con"><h4>Dagegen spricht</h4><ul>
         <li>Das Vermögen wurde oft schon einmal aus versteuertem Einkommen aufgebaut</li>
         <li>Es ist aufwendig, Vermögen (z. B. Häuser, Firmenanteile) richtig zu bewerten &ndash; genau daran scheiterte sie 1997</li>
         <li>Manche befürchten, dass Reiche ihr Geld dann ins Ausland verlagern</li>
+        <li>Ein großer Teil des jüngsten Vermögenszuwachses stammt aus Kursgewinnen an der Börse, die je nach Marktlage auch wieder verschwinden können &ndash; eine feste Steuer würde dann unabhängig von der tatsächlichen Wertentwicklung fällig</li>
       </ul></div>
     </div>
     <div class="statement" data-key="vst1">
@@ -390,11 +417,13 @@
         <li>Wer erbt, hat dafür selbst nichts geleistet &ndash; das verstärkt Ungleichheit zwischen Familien</li>
         <li>2024 kamen bereits 13,3 Milliarden Euro zusammen &ndash; es gibt also Potenzial</li>
         <li>Könnte Kindern aus Familien ohne Erbe bessere Chancen geben</li>
+        <li>Bei deutschen Milliardärinnen und Milliardären stammen laut Oxfam rund 71% ihres Vermögens aus Erbschaft, nicht aus eigener Arbeit &ndash; Kritiker sehen darin ein Argument gegen die Vorstellung, Reichtum sei vor allem "verdient"</li>
       </ul></div>
       <div class="con"><h4>Dagegen spricht</h4><ul>
         <li>Familienunternehmen könnten bei hoher Steuer in Schwierigkeiten geraten</li>
         <li>Es geht um Vererbung an die eigene Familie &ndash; ein sehr persönliches Thema</li>
         <li>Wer nicht direkt verwandt ist, hat schon jetzt nur 20.000 € steuerfrei &ndash; das gilt vielen als unfair niedrig</li>
+        <li>Etwa ein Viertel der deutschen Milliardäre hat das eigene Vermögen selbst aufgebaut &ndash; eine höhere Erbschaftsteuer würde diese Unternehmerleistung nicht direkt betreffen, könnte aber trotzdem als ungerecht gegenüber Familienbetrieben empfunden werden</li>
       </ul></div>
     </div>
     <div class="statement" data-key="erb1">
